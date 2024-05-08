@@ -22,8 +22,8 @@ export default function AddNote() {
                 body: JSON.stringify({ title, description, tag })
             })
             if (response.ok) {
-                router.push('/');
                 router.refresh();
+                router.push('/');
             }
             router.refresh();
         } catch (error) {
