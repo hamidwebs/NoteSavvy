@@ -5,7 +5,9 @@ import DeleteButton from './DeleteButton';
 export default async function NotesList() {
     const getNotes = async () => {
         try {
-            const response = await fetch('http://localhost:3000/api/Notes')
+            const response = await fetch('http://localhost:3000/api/Notes', {
+                cache: 'no-store'
+            })
             if (!response.ok) {
                 throw new Error('Failed to Fetch Notes from Database.')
             }

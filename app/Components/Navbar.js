@@ -23,8 +23,8 @@ export default function Navbar() {
                                 <Link className="nav-link" href="/contact">Contact Us</Link>
                             </li>
                         </ul>
-                        <button className="btn btn-primary"><Link href={'/addnote'} className="text-light text-decoration-none">Add Note</Link></button>
                     </div>
+                    <button className="btn btn-primary"><Link href={'/addnote'} className="text-light text-decoration-none">Add Note</Link></button>
                 </div>
             </nav>
         </div>
