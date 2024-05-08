@@ -13,7 +13,8 @@ export default function AddNote() {
         e.preventDefault();
         const { title, description, tag } = details;
         try {
-            const response = await fetch('http://127.0.0.1:3000/api/Notes', {
+            const response = await fetch('http://localhost:3000/api/Notes', {
+                cache: 'no-store',
                 method: 'POST',
                 headers: {
                     'ContentType': 'application/json'

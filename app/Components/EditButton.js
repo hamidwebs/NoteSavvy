@@ -10,7 +10,7 @@ export default function EditNote(props) {
         e.preventDefault();
         try {
             const { title, description, tag } = details;
-            const response = await fetch(`http://127.0.0.1:3000/api/Notes/${props.id}`, {
+            const response = await fetch(`http://localhost:3000/api/Notes/${props.id}`, {
                 method: 'PUT',
                 headers: {
                     'ContentType': 'application/json'
