@@ -4,8 +4,7 @@ export default async function EditNote({ params }) {
     const getNoteById = async () => {
         try {
             const response = await fetch(`http://localhost:3000/api/Notes/${id}`, {
-                method: 'GET',
-                cache: 'no-store'
+                method: 'GET'
             })
             if (!response.ok) {
                 throw new Error('Failed to Fetch Note from Database.');
