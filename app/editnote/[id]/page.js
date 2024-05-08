@@ -3,7 +3,7 @@ export default async function EditNote({ params }) {
     const { id } = params;
     const getNoteById = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/api/Notes/${id}`, {
+            const response = await fetch(`http://127.0.0.1:3000/api/Notes/${id}`, {
                 method: 'GET'
             })
             if (!response.ok) {

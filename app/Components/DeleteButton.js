@@ -7,7 +7,7 @@ export default function DeleteButton({ id }) {
         let confirmed = confirm("Are you sure?");
         if (confirmed) {
             try {
-                const response = await fetch(`http://localhost:3000/api/Notes?id=${id}`, {
+                const response = await fetch(`http://127.0.0.1:3000/api/Notes?id=${id}`, {
                     method: 'DELETE'
                 })
                 if (response.ok) {
