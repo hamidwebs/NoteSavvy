@@ -1,9 +1,9 @@
-'use client';
 import { Satisfy } from "next/font/google";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 const Satisfy_Font = Satisfy({ weight: "400", subsets: ["latin"] });
 export default function EditNote(props) {
+    'use client';
     const router = useRouter();
     const [details, setDetails] = useState({ title: props.title, description: props.description, tag: props.tag });
     const handleOnSubmit = async (e) => {
