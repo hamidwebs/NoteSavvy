@@ -1,3 +1,4 @@
+"use client";
 import { Satisfy } from "next/font/google";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
