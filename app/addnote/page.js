@@ -24,6 +24,7 @@ export default function AddNote() {
                 router.push('/');
                 router.refresh();
             }
+            router.refresh();
         } catch (error) {
             console.log(error);
         }
